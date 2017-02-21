@@ -1,0 +1,316 @@
+--------------------------------------------------------------
+ * LISTSP | License: GNU GPL v3 | Developed By Sameer Borde *
+--------------------------------------------------------------
+
+1.0.1.4
+
+  * Added:-
+    - Processes Tab:-
+      * New Columns -> I/O Priority & Page Priority 
+    - Services Tab:- 
+      * New Columns -> RegistryKey Modified DateTime & Service SID
+      * Service Type => UserOwnProcess, UserOwnProcessInstance, UserShareProcess & UserShareProcessInstance (Gui + CommandLine)
+    - More CommandLine Options ( "/process", "/service", "/Common" )
+    - Global Font For StatusStrip and MenuStrip ( Edit -> Font -> Use Global Font For Menus and StatusBars )
+
+  * Changed/Modified:-
+    - Processes Tab:-
+      * Child Windows
+      * SysListView32 / ListBox Functions
+      * List Handles      
+    - Find In ListViews
+
+  * Fixed:-
+    - Processes Tab:-
+      * Process Path, CommandLine & Parent Process
+
+
+1.0.1.3
+
+  * Added:-
+    - Services Tab:- 
+      * Service Privileges & Preshutdown timout (Gui + CommandLine)
+      * List Services With Triggers Only ( View -> List Services With Triggers Only )
+      * Change Service User Account (Gui + CommandLine)
+      * New Column -> SID Type
+    - List All Privileges ( Tools -> List All Privileges )
+    - List Tray Icons ( Tools -> List Tray Icons )
+    - Process List In Tray
+    - More CommandLine Options ( "/process", "/service", "/Common" )
+    - SysListView32 / ListBox Functions ( List Child Windows -> SysListView32 / ListBox Class Name )
+
+  * Changed/Modified:-
+    - Processes Tab:-
+      * Child Windows
+      * List File Handles Only & Close File Handles For X64 ( Experimental, Tested On Windows 7 X64 )
+      * List Memory Region
+      * Create Multiple Users
+      * List Windows
+
+  * Fixed:-
+    - List Handles ( Handle Count & Pointer Count (References) )
+
+  * Removed:-
+    - Saving Settings In Registry
+
+
+1.0.1.2
+
+  * Added:-
+    - Processes Tab:-
+      * ListView Checkboxes For List Threads, List Handles, List Users
+    - Create Multiple Users ( Tools -> Create Multiple Users )
+    - More CommandLine Options ( "/service", "/Common" )
+    - Service Recovery (Gui + CommandLine)
+    - Find Option For ListViews
+
+  * Changed/Modified:-
+    - Processes Tab:-
+      * List Threads, List Handles, List Users
+
+  * Fixed:-
+    - List Windows
+    - Exceptions For Services & Drivers List
+   
+
+1.0.1.1
+
+  * Added:-
+    - Services Tab:- 
+      * Change Dependencies, Service Type, Binary Path, Display Name, LoadOrderGroup
+      * New Column -> Error Control
+    - Services & Drivers Tab:-
+      * Change Error Control (Gui + CommandLine)
+
+  * Changed/Modified:-
+    - Loading Form Now Uses PostMessage For Closing During Application Start
+    - Create Service
+    - Close Button For Loading.... ( For Exiting Process )
+    - Changed (Almost) All ShowDialog() To Show()
+    - Processes Tab:-
+      * List Modules
+
+  * Fixed:-
+    - New Task (Run....)
+    - Process Priority
+
+
+1.0.1.0
+
+  * Added:-
+    - Processes Tab:-
+      * Services & Visible Windows in process context menu strip
+      * Create Mini Dump File For Selected Process
+      * More CommandLine Options ( "/process" )
+
+  * Changed/Modified:-
+    - Services Tab:- 
+      * Service Startup Type -> Automatic -> Delayed Start (Gui + CommandLine)
+    - Processes Tab:-
+      * List Modules (Unload Module For Mapped Files & Module Type Column)
+      * List Handles
+      * IsProcessSuspended Function
+      * List Privileges
+      * Process Properties
+      * Create Shortcut
+
+  * Fixed:-
+    - Processes Tab:-
+      * CommandLine Thread Functions
+      * List Modules
+      * Username
+
+  * Removed:-
+    - Loading For List Memory Region
+
+
+1.0.0.9
+
+  * Added:-
+    - Processes Tab:-
+      * List Network Connections For Selected Process
+    - More CommandLine Options
+    - List All Threads ( Tools -> List -> List All Threads )
+    - Find Window ( Tools -> Find Window )
+    - Context Menu: Create Service ( Options -> Context Menu -> Create Service )
+
+  * Changed/Modified:-
+    - List Users & Groups ( Tools -> List -> {List Users/Groups}->ContexMenu -> Modify.... ) 
+    - List Opened Files ( Icons )
+    - New Task (Run....)
+
+    - Create Service 
+    - File: Readme.txt
+
+  * Fixed:-
+    - Device Drivers List
+
+
+1.0.0.8
+
+  * Added:-
+    - Processes Tab:-
+      * Close All File Handles For Process (Gui + CommandLine)
+      * List Services For Selected Process
+      * List File Handles Only For Selected Process
+    - List Opened Files For Selected Folder ( Tools -> List -> List Opened Files For Folder )
+    - Context Menu:-
+      * List Opened Files For Selected Folder ( Options -> Context Menu -> List Opened Files )
+      * List Exports Imports For CPL, EXE, DLL, SYS & SCR Files ( Options -> Context Menu -> List Exports Imports ) 
+    - FAQ ( Help -> FAQ )
+
+  * Changed/Modified:-
+    - List Windows
+    - Create Shortcut
+
+  * Fixed:-
+    - End Process Tree 
+
+
+1.0.0.7
+
+  * Added:-
+    - Services Tab & Drivers Tab:-
+      * Dependents & Dependencies For Checked Items
+    - List Services For All Processes ( Tools -> List -> List Services )
+
+  * Changed/Modified:-
+    - List Handles
+    - List Modules
+    - List Opened Files
+    - Device Drivers List
+
+  * Fixed:-
+    - Global Font & RenderMode For CommandLine
+
+
+1.0.0.6
+
+  * Added:-
+    - Command Line Options:-
+      * Process Tab:-
+        - Enable Disable Remove Privileges ( "/Process" )
+
+  * Changed/Modified:-
+    - List Opened Files
+    - Command Line Options:-
+      * Process Tab:-
+        - Support For Process Names Which Contain Spaces (Delimiter Changed From Space To Comma)
+        
+  * Fixed:-
+    - Shutdown (SeShutdownPrivilege was not applied)
+    - List Privileges
+    - Opacity
+
+
+1.0.0.5
+
+  * Added:-
+    - Processes Tab:-
+      * List Memory Region
+      * List Strings ( Memory & File )
+    - Services Tab & Drivers Tab:-
+      * New Columns -> ServiceFlags, Win32ExitCode, ControlsAccepted, WaitHint, ServiceSpecificExitCode, CheckPoint, Tag ID
+    - Drivers Tab:-
+      * New Column -> BaseAddress
+    - Icon Size ( View -> View -> Icon Size )
+   
+  * Fixed:-
+    - List Windows
+    - Window Position
+
+
+1.0.0.4
+ 
+  * Added:-
+    - Processes Tab:-
+      * New Columns For I/O, Handles, CPU Time, Memory
+      * List Privileges
+      * List Environment Variables
+    - Services Tab:-
+      * New Column -> PID
+      * Go To Process
+    - More Command Line Options ( "/Process" )
+    - List Users & Groups ( Tools -> List -> List Users )
+    - List Opened Files ( Tools -> List -> List Opened Files )
+    - Save As Text File (Vertical Format)
+    - Now Font Settings Works For All ListViews (((Parent + Child) Windows) -> Global Font) [ Ctrl + F ]
+    - ListView Item ToolTipText Viewer ( View -> ListView Item ToolTipText Viewer )
+    - ListView Item Viewer ( View -> ListView Item Viewer )
+
+  * Changed/Modified:-
+    - Processes Tab:-
+      * Process Item ToolTip, Now Displays Services also
+    - Default Font Changed From "Lucida Console" To "Tahoma"
+
+  * Fixed:-
+    - Processes Tab:-
+      * Go To Service (Available For Single Checked Item Only)
+      * List Modules
+
+
+1.0.0.3
+ 
+  * Added:-
+    - Processes Tab:-
+      * End Process Tree (Shift + F2)
+      * List Handles
+      * List Windows For Selected Process (Visible + Hidden)
+      * List Modules:-
+        - New Columns -> Flags, Load Count ( For User Processes Only )
+      * Play Sound For New Process ( Options -> Process -> Play Sound For New Process )
+    - Services Tab:-
+      * New Column -> User Account
+      * Service Item Properties:-
+        - User Account
+        - Service DLL
+    - List Network Interfaces:-
+      * New Columns -> DHCPIPAddress, WinsServersAddresses, NameServer, IsReceiveOnly, LeaseObtainedTime, LeaseTerminatesTime, T1_Time, T2_Time  
+    - Command Line Options:-
+      * Network Tab
+      * More CommandLine Options ( /Common )
+    - List Checked Items ( Options -> ListView Options -> List Checked Items )
+    - Global Hotkeys ( "Ctrl+Shift+H" for Hiding & "Ctrl+Shift+S" for Showing LISTSP )
+    - Now Saving ListView Data Available Everywhere
+    - Hide When Minimized Option ( File -> Hide When Minimized )
+
+  * Changed/Modified:-
+    - List Windows
+    - New Task (Run....)
+    - Calendar
+  
+  * Removed:-
+    - Loading For Network Tab 
+
+
+1.0.0.2
+
+  * Added:-
+    - List Network Interface (Operational Only)
+    - More CommandLine Options ( /? )
+    - Saving All Items (Html, Txt) For List Windows, List Modules, List Threads
+    - Previous/Next Buttons For All Properties Windows
+
+  * Changed/Modified:-
+    - List Windows
+
+  * Fixed:-
+    - Proceeses Tab:-
+      * Group By For All Columns
+    - New Task (Run....)
+
+
+1.0.0.1
+
+  * Added:-
+    - Network Tab
+    - Object Security (Permissions)
+
+    - Create Service 
+    - Open Item in RegEdit (Gui + CommandLine)
+
+ 
+
+1.0.0.0
+
+  * Initial / First release
