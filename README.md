@@ -1,4 +1,4 @@
-# listsp
+# LISTSP
 
 http://sf.net/p/listsp
 
